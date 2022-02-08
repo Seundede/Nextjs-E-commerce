@@ -1,7 +1,6 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
-
 export default NextAuth({
   providers: [
     GoogleProvider({
@@ -9,5 +8,5 @@ export default NextAuth({
       clientSecret: process.env.GOOGLE_SECRET,
     }),
   ],
-  secret: "PLACE-HERE-ANY-STRING",
+  secret: process.env.NEXTAUTH_SECRET,
 });
