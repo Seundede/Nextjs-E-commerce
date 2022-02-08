@@ -1,2 +1,2 @@
 # Nextjs-E-commerce
-![](images/image1.png)
+![](src/images/image1.png)
