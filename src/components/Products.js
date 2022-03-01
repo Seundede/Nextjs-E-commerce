@@ -52,4 +52,4 @@ export default function Products({ data }) {
         ))}
     </div>
   );
-}
+};
