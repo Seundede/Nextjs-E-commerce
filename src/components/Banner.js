@@ -5,7 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 export default function Bannner() {
   return (
     <div className="relative">
-      <div className="absolute w-full h-28 bg-gradient-to-r from-gray-100 to-transparent bottom-0 z-20" />
+      <div className="absolute w-full h-[55px] bg-gradient-to-r from-gray-100/50 to-transparent bottom-0 z-20" />
       <Carousel
         infiniteLoop
         autoPlay

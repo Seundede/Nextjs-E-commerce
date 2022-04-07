@@ -3,7 +3,7 @@ import Product from "./Product";
 
 export default function Products({ data }) {
   return (
-    <div className="grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto md:-mt-52 lg:-mt-60">
+    <div className="grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto md:-mt-32 ">
       {data
         .slice(0, 4)
         .map(({ id, title, price, description, category, image }) => (
@@ -20,7 +20,7 @@ export default function Products({ data }) {
       <img
         src="https://next-ecommerce-front.vercel.app/images/subscribe.jpg"
         alt=""
-        className="md:col-span-full w-full "
+        className="md:col-span-full w-full px-3 "
       />
       <div className="md:col-span-2">
         {data

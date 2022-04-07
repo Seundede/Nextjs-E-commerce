@@ -29,7 +29,7 @@ export default function Header() {
           />
           
         </div>
-        <div className="bg-yellow-500 hover:bg-yellow-600 hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer ">
+        <div className="bg-yellow-500 hover:bg-yellow-600 hidden md:flex items-center h-10 rounded-md flex-grow cursor-pointer ">
           <input
             type="text"
             className="p-2 px-4 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none "
