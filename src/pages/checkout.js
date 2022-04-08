@@ -8,6 +8,7 @@ import { productTotal } from "../slices/basketSlice";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 
+
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
@@ -31,10 +32,10 @@ export default function Checkout() {
     }
   };
   return (
-    <div className="bg-gray-100">
+    <div>
       <Header />
       <main className="lg:flex max-w-screen-2xl mx-auto">
-        <div className="flex flex-col p-5 space-y-12 bg-white mb-4">
+        <div className="flex flex-col p-5 space-y-12 mb-4">
           <h1 className=" text-3xl pb-4 border-b">
             {items.length === 0
               ? "Your Shopping cart is empty"
@@ -54,8 +55,8 @@ export default function Checkout() {
             />
           ))}
         </div>
-        <div className="flex flex-col p-10 bg-white shadow-md">
-          {items.length > 0 && (
+        {items.length > 0 && (
+          <div className="flex flex-col p-10 bg-white shadow-md">
             <div>
               <h2 className="whitespace-nowrap">
                 Subtotal({items.length}):
@@ -75,8 +76,8 @@ export default function Checkout() {
                 {!session ? "Sign in to checkout" : "Proceed to checkout"}
               </button>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </main>
     </div>
   );
