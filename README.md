@@ -26,6 +26,7 @@ These instructions will get you a copy of the project up and running on your loc
 The following software is required to be installed on your system:
 - Node 
 - Npm 
+
 Type the following commands in the terminal to verify your node and npm versions
 ```bash
 npm -v
